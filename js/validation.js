@@ -25,10 +25,10 @@ function validateMe(event) {
   validateGeneral(emailNode, checkLength(emailNode, 5, 50), checkFormat(emailNode,
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       'Email format is incorrect'));
-  validateGeneral(phoneNode, checkLength(phoneNode, 11), checkFormat(phoneNode,
+  validateGeneral(phoneNode, checkLength(phoneNode, 12), checkFormat(phoneNode,
       /^[0+]\d{3}(\(\d{2}\)|\d{2})([ -]?\d{3}){2}[ -]?\d{2}$/,
       'Phone format is incorrect.'));
-  validateGeneral(messageNode, checkLength(messageNode, 9), messageFormat(messageNode));
+  validateGeneral(messageNode, checkLength(messageNode, 10), messageFormat(messageNode));
 
   return false;
 }
